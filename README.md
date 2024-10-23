@@ -10,8 +10,11 @@ For package documentation, see the Go documentation at https://pkg.go.dev/github
 [automerge-rs]: https://github.com/automerge/automerge-rs
 
 ## Building from automerge-c
-This step must be done on an Apple Silicon mac with docker running.
+
+This must be done on an Apple Silicon mac with docker running.
 
 ```sh
 ./deps/rebuild.sh
 ```
+
+This requires `cmake` and `cmocka` to be installed (via Homebrew), and for https://github.com/automerge/automerge to be cloned into `./deps/automerge`.
